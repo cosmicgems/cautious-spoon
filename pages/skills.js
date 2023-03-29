@@ -121,7 +121,7 @@ export default function SkillsExp() {
                         I am passionate about using my skills to make a positive impact on society through the advancement of technology. Keeping up with the latest trends and techniques in the industry is essential to me, and I constantly seek new challenges to push my limits. 
                         </Typography>
                         <Typography sx={{color: blackBeauty[100]}} variant='p'  paragraph>
-                        Whether you are looking for a web developer to build your next project or collaborate on an existing one, I am here to help. Take a look at my portfolio to see my work, and don't hesitate to reach out to discuss how we can work together to achieve your goals.
+                        Whether you are looking for a web developer to build your next project or collaborate on an existing one, I am here to help. Take a look at my portfolio to see my work, and don&#39;t hesitate to reach out to discuss how we can work together to achieve your goals.
                         </Typography>
                         </CardContent>
                     </Collapse>
@@ -284,7 +284,7 @@ export default function SkillsExp() {
                             </Grid>
                             <Grid item xs={9}>
                          <Typography variant='h6' component='div' sx={{fontWeight: 'bold', textAlign: 'left', color: blackBeauty[100], letterSpacing: '.75vw'}}>
-                                    DAQRI <span style={{fontWeight:'normal', marginInlineStart:'1vw'}}>   Jan 18' - Aug 19'</span>
+                                    DAQRI <span style={{fontWeight:'normal', marginInlineStart:'1vw'}}>   Jan 18&#39; - Aug 19&#39;</span>
                                 </Typography>
 
                             </Grid>
@@ -324,7 +324,7 @@ export default function SkillsExp() {
                             </Grid>
                             <Grid item xs={9}>
                                 <Typography variant='p' component='div' sx={{fontWeight: 'bold', textAlign: 'left', color: blackBeauty[100], letterSpacing: '.75vw'}}>
-                                    THB <span style={{fontWeight:'normal', marginInlineStart:'1vw'}}>   Aug 14' - Dec 17'</span>
+                                    THB <span style={{fontWeight:'normal', marginInlineStart:'1vw'}}>   Aug 14&#39; - Dec 17&#39;</span>
                                 </Typography>
                             </Grid>
                             <Grid item xs={12}>

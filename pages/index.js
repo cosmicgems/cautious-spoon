@@ -47,7 +47,7 @@ export default function Home() {
                     xs: 'slide-left 9s linear infinite',
                     md: 'slide-left 12s linear infinite'
                   },
-                }}>  Hello, I'm Maliek.
+                }}>  Hello, I&#39;m Maliek.
               </Typography>
 
               

@@ -98,7 +98,7 @@ export default function Portfolio(){
                     
                   </Typography>
                   <Typography variant="body" color={theme.palette.secondary.subone}  sx={{letterSpacing:  {xs: '2px', md: '5px'}, fontSize: {xs: '1.1rem', md: '1.5rem'}, height: { xs: '15vh'}}}>
-                    Lifestyle blog dedicated to people who want to live a life worth living. It's a curation of value add reads.
+                    Lifestyle blog dedicated to people who want to live a life worth living. It&#39;s a curation of value add reads.
                   </Typography>
                 </CardContent>
                             <CardActions  disableSpacing>
@@ -144,7 +144,7 @@ export default function Portfolio(){
                     
                   </Typography>
                   <Typography variant="body" color={theme.palette.secondary.subone} sx={{letterSpacing:  {xs: '2px', md: '5px'}, fontSize: {xs: '1.1rem', md: '1.5rem'}, height: {xs: '15vh'}}}>
-                    This is my very &#34;first&#34; personal website... at the very least the one I'm not afraid of showing to the public lol Tremendous growth.
+                    This is my very &#34;first&#34; personal website... at the very least the one I&#39;m not afraid of showing to the public lol Tremendous growth.
                   </Typography>
                 </CardContent>
                             <CardActions  disableSpacing>

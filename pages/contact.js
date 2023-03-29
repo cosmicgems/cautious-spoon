@@ -179,7 +179,7 @@ export default function Contact(){
                         xs: 'slide-left2 15s linear infinite',
                         md: 'slide-left2 12s linear infinite'
                         } 
-                    }}>  Let's Work Together!
+                    }}>  Let&#39;s Work Together!
                     </Typography>
                 </div>
 

@@ -90,7 +90,7 @@ export default function AboutComponent(){
                             <CardMedia
                                 component="img"
                                 alt="pearlbox.co website"
-                                sx={{  maxHeight: '150px', objectFit: 'contain'}}
+                                sx={{  maxheight: '150px', objectFit: 'contain'}}
                                 image="/images/maliek-hero3.png"
                             />
                             <CardContent>
@@ -120,11 +120,11 @@ export default function AboutComponent(){
                                 </Typography>
                                 <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>At the age of 11, my family moved to Rochester Hills, a suburb of Detroit. It was a drastic change, going from the city to the suburbs, and I had to adjust quickly. But even in this new environment, there were challenges. I struggled to find my focus and direction, and it seemed like everyone else around me had it all figured out. 
                                 </Typography>
-                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>But I didn't let that discourage me. I knew that if I wanted to succeed, I had to keep moving forward, no matter what. And that's exactly what I did. I took every opportunity that came my way, and I worked hard to make the most of it. 
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>But I didn&#39;t let that discourage me. I knew that if I wanted to succeed, I had to keep moving forward, no matter what. And that&#39;s exactly what I did. I took every opportunity that came my way, and I worked hard to make the most of it. 
                                 </Typography>
                                 <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>As I got older, I began to realize that my purpose in life was to help others. I wanted to use my skills and talents to make a positive impact in the world. And with that realization came a newfound sense of confidence and determination. 
                                 </Typography>
-                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>Looking back on my journey so far, I realize that it's been a series of ups and downs. But through it all, I've learned to weather the storms and come out stronger on the other side. And I know that whatever challenges come my way in the future, I'll be ready to take them on with the same resilience and determination that has brought me this far.
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>Looking back on my journey so far, I realize that it&#39;s been a series of ups and downs. But through it all, I&#39;ve learned to weather the storms and come out stronger on the other side. And I know that whatever challenges come my way in the future, I&#39;ll be ready to take them on with the same resilience and determination that has brought me this far.
                                 </Typography>
                                 </CardContent>
                             </Collapse>
@@ -230,11 +230,11 @@ export default function AboutComponent(){
                                 </Typography>
                                 <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>At the age of 11, my family moved to Rochester Hills, a suburb of Detroit. It was a drastic change, going from the city to the suburbs, and I had to adjust quickly. But even in this new environment, there were challenges. I struggled to find my focus and direction, and it seemed like everyone else around me had it all figured out. 
                                 </Typography>
-                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>But I didn't let that discourage me. I knew that if I wanted to succeed, I had to keep moving forward, no matter what. And that's exactly what I did. I took every opportunity that came my way, and I worked hard to make the most of it. 
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>But I didn&#39;t let that discourage me. I knew that if I wanted to succeed, I had to keep moving forward, no matter what. And that&#39;s exactly what I did. I took every opportunity that came my way, and I worked hard to make the most of it. 
                                 </Typography>
                                 <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>As I got older, I began to realize that my purpose in life was to help others. I wanted to use my skills and talents to make a positive impact in the world. And with that realization came a newfound sense of confidence and determination. 
                                 </Typography>
-                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>Looking back on my journey so far, I realize that it's been a series of ups and downs. But through it all, I've learned to weather the storms and come out stronger on the other side. And I know that whatever challenges come my way in the future, I'll be ready to take them on with the same resilience and determination that has brought me this far.
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left'}} paragraph>Looking back on my journey so far, I realize that it&#39;s been a series of ups and downs. But through it all, I&#39;ve learned to weather the storms and come out stronger on the other side. And I know that whatever challenges come my way in the future, I&#39;ll be ready to take them on with the same resilience and determination that has brought me this far.
                                 </Typography>
                                 </CardContent>
                             </Collapse>
