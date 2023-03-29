@@ -19,9 +19,9 @@ export default function App(props) {
     <ThemeProvider theme={theme} >
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
       <CssBaseline />
-        <div style={{fontFamily}}>
+      
            <Component {...pageProps} />
-        </div>
+       
        
      
       
