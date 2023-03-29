@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+main{
+  position: 'fixed';
+}
 body{
   background: linear-gradient(to left, #4fb576 , #44c489 , #28a9ae , #28a2b7 , #4c7788 , #6c4f63 , #432c39 );
 	background-size: 400% 400%;

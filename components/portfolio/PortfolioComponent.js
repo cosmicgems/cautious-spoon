@@ -69,10 +69,10 @@ export default function Portfolio(){
 
             </div>
             <CardContent
-          sx={{ position:'absolute',  paddingBlockStart: '35vh', minWidth: '100%', maxWidth: '100%', display:'flex', overflowX: 'scroll' }}
+          sx={{ position:'absolute',  paddingBlockStart: '35vh', minWidth: '100%', maxWidth: '100%', display:'flex',  }}
           >
             
-            <div style={{display:'flex', textAlign:'center',}}>
+            <div style={{display:'flex', textAlign:'center', overflow:'auto'}}>
 
 
               <Card 
