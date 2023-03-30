@@ -10,6 +10,7 @@ body{
 	animation: gradient 7.5s ease infinite;
   padding: 0;
   font-family: 'mongoose';
+  overflow-y: hidden;
 }
 
 html{
