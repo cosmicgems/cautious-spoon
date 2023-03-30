@@ -17,17 +17,11 @@ export default function App(props) {
       <meta name="viewport" content="initial-scale=1, width=device-width" />
     </Head>
     <ThemeProvider theme={theme} >
-    <div className='canvas' style={{height: '100vh', overscrollBehavior: 'none'}}>
+    <div className='canvas' style={{height: '100vh', overscrollBehavior: 'none', position: 'fixed'}}>
+    </div>
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
-            
-                <Component {...pageProps} />
-            
-            
-          
-            
-         
-    </div>
+    <Component {...pageProps} />
        </ThemeProvider>
   </CacheProvider>
   );
