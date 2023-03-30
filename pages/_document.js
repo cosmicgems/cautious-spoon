@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" style={{background: 'linear-gradient(to left, #4fb576 , #44c489 , #28a9ae , #28a2b7 , #4c7788 , #6c4f63 , #432c39 )', backgroundSize: '400% 400% ', animation: 'gradient 7.5s ease infinite' }}>
     <Head>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -10,7 +10,10 @@ export default function Document() {
     <link rel="stylesheet" href="https://use.typekit.net/gxl0ptg.css" />
     </Head>
       <body  >
-        <Main />
+      <div className='canvas'>
+        <Main  /> 
+      </div>
+        
         <div id='portal'/>
         <NextScript />
       </body>

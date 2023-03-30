@@ -11,6 +11,13 @@ body{
   padding: 0;
   font-family: 'mongoose';
 }
+.canvas{
+  background: linear-gradient(to left, #4fb576 , #44c489 , #28a9ae , #28a2b7 , #4c7788 , #6c4f63 , #432c39 );
+	background-size: 400% 400%;
+	animation: gradient 7.5s ease infinite;
+  padding: 0;
+  font-family: 'mongoose';
+}
 .MuiOutlinedInput-notchedOutline{
   border-color: #f5f5f5 !important;
 }
