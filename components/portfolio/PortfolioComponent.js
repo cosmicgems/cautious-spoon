@@ -41,16 +41,16 @@ export default function Portfolio(){
     return (
         <>
             
-      <main style={{minHeight: '100vh', paddingBlockEnd: '0', marginBlockEnd: '0'}}>
+      <main style={{minHeight: '100vh',  paddingBlock: '0', marginBlock: '0'}}>
       
-      <Card maxHeight='100vh' sx={{paddingBlock: '0', marginBlock:'0'}}>
+      <Card maxHeight='100vh' sx={{paddingBlock: '0', marginBlock:'0', width:'100%'}}>
           <CardMedia 
           component='img'
           sx={{ position:'fixed', maxHeight: '100vh', objectFit: 'contain'}}
           image='/images/maliek-hero.png'
           alt='Dark work out area with a barbell as the center of attention'
           />
-          <div style={{display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap', overflow:'hidden',  position:'absolute', width:'100%',  paddingBlockStart: '10vh'}}>
+          <div style={{display: 'flex', width:'100%', flexWrap: 'nowrap', whiteSpace: 'nowrap', overflow:'hidden',  position:'absolute',  paddingBlockStart: '10vh'}}>
               <Typography variant='h1' component='div' 
                 sx={{
                     color: blackBeauty[100],
@@ -62,17 +62,22 @@ export default function Portfolio(){
                   animation: {
                     xs: 'slide-left-portfolio 8s linear infinite',
                     md: 'slide-left-portfolio 20s linear infinite'
-                  },
+                  }, bgcolor: 'transparent'
                 }}>  My Portfolio.
               </Typography>
 
 
             </div>
+
+
             <CardContent
-          sx={{ position:'absolute',  paddingBlockStart: '35vh', minWidth: '100%', display:'flex',  }}
-          >
-            
-            <div style={{display:'flex', textAlign:'center', overflow:'auto'}}>
+            sx={{ position:'absolute',  paddingBlockStart: '35vh', maxWidth: '100%', display:'flex', overflowX:'scroll'}}
+            >
+
+
+
+            {/* Card Slider */}
+            <div style={{display:'flex', textAlign:'center'}}>
 
 
               <Card 

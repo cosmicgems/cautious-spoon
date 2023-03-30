@@ -90,7 +90,7 @@ export default function AboutComponent(){
                             <CardMedia
                                 component="img"
                                 alt="pearlbox.co website"
-                                sx={{  maxheight: '150px', objectFit: 'contain'}}
+                                sx={{  maxHeight: '150px', objectFit:'contain'}}
                                 image="/images/maliek-hero3.png"
                             />
                             <CardContent>

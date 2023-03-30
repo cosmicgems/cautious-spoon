@@ -142,13 +142,13 @@ export default function Contact(){
             alt='Dark work out area with a barbell as the center of attention'
             />
             <CardContent
-            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh'}}
+            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh', paddingInline:'0'}}
             >
-                <div style={{display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
+                <div style={{position:'absolute',display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
-                <Typography variant='h1' component='div' 
+                <Typography variant='h2' component='div' 
                     sx={{
-                        color: blackBeauty[100],
+                        color: blackBeauty[300],
                     display: 'flex',
                     fontFamily: 'mongoose',
                     width: '100%',
@@ -164,7 +164,9 @@ export default function Contact(){
                 
 
                 </div>
-                <div style={{display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
+
+
+                <div style={{position:'absolute', paddingBlockStart: {xs:'7vh'}, display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
                                 
                 <Typography variant='h1' component='div' 
@@ -183,7 +185,10 @@ export default function Contact(){
                     </Typography>
                 </div>
 
-                <Card sx={{bgcolor: blackBeauty[800]}} >
+
+
+                <Box sx={{paddingInline: {xs: '8vw'}, paddingBlockStart: {xs:'25vh'}}}>
+                    <Card sx={{bgcolor: blackBeauty[800]}} >
                     <CardContent >
                         <form onSubmit={handleSubmit}>
                             <Typography variant='p' component='div' sx={{textAlign: 'center', marginBlockEnd: '3vh', fontSize:'1.5em'}} className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'>Currently looking to take on new projects and work!</Typography>
@@ -240,6 +245,8 @@ export default function Contact(){
 
                     </CardContent>
                 </Card>
+                </Box>
+                
                 
                 
                                 

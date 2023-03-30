@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed" sx={{bgcolor: 'transparent', fontFamily: 'mongoose' }}>
+    <AppBar position="fixed" sx={{bgcolor: blackBeauty[900], fontFamily: 'mongoose' }} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           
@@ -53,9 +53,9 @@ function ResponsiveAppBar() {
               fontFamily: 'mongoose',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
             }}
+            className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'
           >
             Maliek Davis
           </Typography>
@@ -105,7 +105,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -113,9 +113,9 @@ function ResponsiveAppBar() {
               fontFamily: 'mongoose',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
             }}
+            className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'
           >
             Maliek Davis
           </Typography>

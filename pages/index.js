@@ -31,7 +31,7 @@ export default function Home() {
           alt='Dark work out area with a barbell as the center of attention'
           />
           <CardContent
-          sx={{ position:'absolute', width:'100%', maxHeight:'100vh', paddingBlockStart: {xs:'20vh', md:'8vh'}}}
+          sx={{ position:'absolute', width:'100%', maxheight:'100vh', paddingBlockStart: {xs:'20vh', md:'8vh'}, paddingInline:'0'}}
           >
             <div style={{display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
             width:'100%',overflow:'hidden',}}>

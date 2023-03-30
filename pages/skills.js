@@ -50,13 +50,13 @@ export default function SkillsExp() {
             alt='Dark work out area with a barbell as the center of attention'
             />
             <CardContent
-            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh'}}
+            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
             >
-                <div style={{display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
+                <div style={{position:'absolute' ,display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
                 <Typography variant='h1' component='div' 
                     sx={{
-                        color: blackBeauty[100],
+                        color: blackBeauty[300],
                     display: 'flex',
                     fontFamily: 'mongoose',
                     width: '100%',
@@ -77,6 +77,7 @@ export default function SkillsExp() {
                                 
                 <Typography variant='h1' component='div' 
                     sx={{
+                        paddingBlockStart:{xs:'7vh'},
                         color: blackBeauty[100],
                         fontFamily: 'mongoose',
                         width: '100%',
@@ -90,8 +91,13 @@ export default function SkillsExp() {
                     }}>  Experience 
                     </Typography>
                 </div>
-                
-                <Card sx={{ maxWidth: 345 , marginBlockEnd: '3vh', bgcolor: blackBeauty[800]}} >
+
+
+            <CardContent sx={{  maxWidth: '100%', display:'flex', overflowX:'auto'}}
+             >
+
+                <div style={{display:'flex', textAlign:'center'}}>
+                <Card sx={{ minWidth: 345 , maxWidth: 345, marginInlineEnd: {xs:'5vw'}, bgcolor: blackBeauty[800]}} >
                     <CardContent>
                         <Typography variant="h4" component='div' className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>
                             FULL-STACK WEB DEVELOPMENT
@@ -127,7 +133,7 @@ export default function SkillsExp() {
                     </Collapse>
                 </Card>
                 
-                <Card sx={{ maxWidth: 345, marginBlockEnd:'3vh', bgcolor: blackBeauty[800] }}>
+                <Card sx={{ maxWidth: 345, marginInlineEnd: {xs:'5vw'}, bgcolor: blackBeauty[800] }}>
                 <CardContent>
                     <Typography variant="h4" component='div' className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>SKILLS</Typography>
                     
@@ -267,7 +273,7 @@ export default function SkillsExp() {
                     </CardContent>
                 </Card>
                                 
-                <Card sx={{ maxWidth: 345, bgcolor: blackBeauty[800] }}>
+                <Card sx={{ maxWidth: 345, marginInlineEnd: {xs:'5vw'}, bgcolor: blackBeauty[800] }}>
                     <Typography variant='h4' component='div'  className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>EXPERIENCE</Typography>
                     <CardContent sx={{  maxWidth: '100%', display:'flex', overflowX:'scroll',  bgcolor: blackBeauty[700]}}>
                     
@@ -355,10 +361,15 @@ export default function SkillsExp() {
 
                     </CardContent>
                 </Card>
+              </div>
+            </CardContent>
+              
+                
                 
             
             
             </CardContent>
+            
           </Card> 
           </main>
         </Layout>
