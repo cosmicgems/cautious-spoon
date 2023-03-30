@@ -25,8 +25,15 @@ html{
 .MuiFilledInput-root {
   border-bottom: solid #f5f5f5 !important;
 }
-.menuPaper-root{
-  background-color: #343434;
+.MuiMenu-list{
+  background-color: #000000;
+}
+.white-text{
+  color: #f5f5f5;
+}
+
+.active-link-me{
+  font-size: '300rem';
 }
 
 

@@ -95,12 +95,12 @@ function ResponsiveAppBar() {
               }}
             >
                 <MenuItem onClick={handleCloseNavMenu}>
-                <Link href='/' ><Typography textAlign="center">HOME</Typography></Link>
+                <Link href='/' ><Typography textAlign="center" sx={{fontSize:'1.35rem', letterSpacing: '2px'}} className={router.pathname === ( '/' ) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black fw-bold' : 'white-text'}  >HOME</Typography></Link>
                   
                 </MenuItem>
               {pages.slice(0).reverse().map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Link href={`${page}`} ><Typography textAlign="center">{page.toUpperCase()}</Typography></Link>
+                <Link href={`${page}`} ><Typography textAlign="center" sx={{fontSize:'1.35rem', letterSpacing: '2px'}} className={router.pathname === ( '/' + page.toLowerCase()) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : 'white-text'}  >{page.toUpperCase()}</Typography></Link>
                   
                 </MenuItem>
               ))}
