@@ -14,16 +14,20 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 import { blackBeauty } from '@/src/utils/typography/color';
+import { NavLink,} from 'react-router-dom';
+import { useRouter } from 'next/router';
 
 const pages = [   'contact', 'about','skills','portfolio'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
+  const router = useRouter();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
+    console.log(router.pathname)
   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -54,6 +58,7 @@ function ResponsiveAppBar() {
               fontWeight: 700,
               letterSpacing: '.3rem',
               textDecoration: 'none',
+              fontSize:'3rem'
             }}
             className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'
           >
@@ -123,19 +128,25 @@ function ResponsiveAppBar() {
           
             {pages.map((page) => (
               <Link key={page} href={`${page}`}><Button
-                
+                 
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block', fontSize: '1.5rem' }}
               >
+              <Typography sx={{fontSize:'2rem'}} className={router.pathname === ( '/' + page.toLowerCase()) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : ''}   >
                 {page}
+              </Typography>
+                
               </Button></Link>
               
             ))}<Link  href='/'><Button
-                
+                  
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block' , fontSize: '2rem'}}
               >
+              <Typography sx={{fontSize:'2rem'}} className={router.pathname === ( '/' ) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : ''} >
                 Home
+              </Typography>
+                
               </Button></Link>
           </Box>
 

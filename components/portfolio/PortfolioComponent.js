@@ -6,7 +6,7 @@ import styles from '@/styles/Home.module.css'
 import { Box, Button, Card, CardActions, CardContent, Grid, Typography } from '@mui/material'
 import CardMedia from '@mui/material/CardMedia'
 import Layout from '@/components/Layout/Layout'
-import { blackBeauty } from '@/src/utils/typography/color'
+import { ambitiousBlue, blackBeauty, outlandishOrange } from '@/src/utils/typography/color'
 import Link from 'next/link'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
@@ -15,9 +15,13 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { styled } from '@mui/material/styles';
 import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
-import { red } from '@mui/material/colors';
+import { blue, red, yellow } from '@mui/material/colors';
 import Collapse from '@mui/material/Collapse';
 import theme from '@/src/theme'
+import Stack from '@mui/material/Stack';
+import CircularProgress from '@mui/material/CircularProgress';
+import PropTypes from 'prop-types';
+
 
 
 const ExpandMore = styled((props) => {
@@ -33,10 +37,57 @@ const ExpandMore = styled((props) => {
 
 export default function Portfolio(){
   const [expanded, setExpanded] = React.useState(false);
+  const [expanded2, setExpanded2] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+
+  function CircularStatic() {
+    const [progress, setProgress] = React.useState(10);
+  
+    React.useEffect(() => {
+      const timer = setInterval(() => {
+        setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
+      }, 800);
+      return () => {
+        clearInterval(timer);
+      };
+    }, []);
+  
+    return <CircularProgressWithLabel value={progress} />;
+  }
+
+function CircularProgressWithLabel(props) {
+  return (
+    <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+      <CircularProgress variant="determinate" {...props} />
+      <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Typography variant="caption" component="div" className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'>
+          {`${Math.round(props.value)}%`}
+        </Typography>
+      </Box>
+    </Box>
+  );
+}
+
+
+CircularProgressWithLabel.propTypes = {
+  /**
+   * The value of the progress indicator for the determinate variant.
+   * Value between 0 and 100.
+   * @default 0
+   */
+  value: PropTypes.number.isRequired,
+};
 
     return (
         <>
@@ -50,34 +101,61 @@ export default function Portfolio(){
           image='/images/maliek-hero.png'
           alt='Dark work out area with a barbell as the center of attention'
           />
-          <div style={{display: 'flex', width:'100%', flexWrap: 'nowrap', whiteSpace: 'nowrap', overflow:'hidden',  position:'absolute',  paddingBlockStart: '10vh'}}>
-              <Typography variant='h1' component='div' 
-                sx={{
-                    color: blackBeauty[100],
-                  display: 'flex',
-                  fontFamily: 'mongoose',
-                  width: '100%',
-                  flexShrink: 0,
-                  alignItems: 'center',
-                  animation: {
-                    xs: 'slide-left-portfolio 8s linear infinite',
-                    md: 'slide-left-portfolio 20s linear infinite'
-                  }, bgcolor: 'transparent'
-                }}>  My Portfolio.
-              </Typography>
+          
+          <CardContent
+            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
+            >
 
+              
+                <div style={{position:'absolute' ,display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
+                width:'100%',overflow:'hidden',}}>
+                <Typography variant='h1' component='div' 
+                    sx={{
+                        color: blackBeauty[300],
+                    display: 'flex',
+                    fontFamily: 'mongoose',
+                    width: '100%',
+                    flexShrink: 0,
+                    alignItems: 'center',
+                    animation: {
+                        xs: 'slide-left 9s linear infinite',
+                        md: 'slide-left 12s linear infinite'
+                    },
+                    }}>  Blood, Sweat
+                </Typography>
 
-            </div>
+                
 
+                </div>
+                <div style={{display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
+                width:'100%',overflow:'hidden',}}>
+                                
+                <Typography variant='h1' component='div' 
+                    sx={{
+                        paddingBlockStart:{xs:'7vh'},
+                        color: blackBeauty[100],
+                        fontFamily: 'mongoose',
+                        width: '100%',
+                        display: 'flex',
+                        flexShrink: 0,
+                        alignItems: 'center',
+                        animation: {
+                        xs: 'slide-left2 15s linear infinite',
+                        md: 'slide-left2 12s linear infinite'
+                        } 
+                    }}>  & Tears 
+                    </Typography>
+                </div>
 
+                
             <CardContent
-            sx={{ position:'absolute',  paddingBlockStart: '35vh', maxWidth: '100%', display:'flex', overflowX:'scroll'}}
+            sx={{ position:'absolute',  maxWidth: '100%', minWidth:'100%', display:'flex', overflow: 'auto'}}
             >
 
 
 
             {/* Card Slider */}
-            <div style={{display:'flex', textAlign:'center'}}>
+            <Stack direction='row' justifyContent="center" alignItems='center' style={{display:'flex', textAlign:'center'}}>
 
 
               <Card 
@@ -86,7 +164,7 @@ export default function Portfolio(){
                 xs: '80vw',
                 lg: '30vw'
               }, 
-              margin: '1vw', bgcolor:blackBeauty[800]
+              margin: '1vw', bgcolor:blackBeauty[800], marginInlineStart: {xl: '25vw'},
               }}>
                 <CardMedia
                   component="video"
@@ -102,18 +180,19 @@ export default function Portfolio(){
                   </Link>
                     
                   </Typography>
-                  <Typography variant="body" color={theme.palette.secondary.subone}  sx={{letterSpacing:  {xs: '2px', md: '5px'}, fontSize: {xs: '1.1rem', md: '1.5rem'}, height: { xs: '15vh'}}}>
+                  <Typography variant="body" color={theme.palette.secondary.subone}  sx={{letterSpacing:  {xs: '2px', md: '5px'}, fontFamily:'Bellota Text', fontSize: {xs: '1rem', md: '1rem'}, height: { xs: '15vh'}}}>
                     Lifestyle blog dedicated to people who want to live a life worth living. It&#39;s a curation of value add reads.
                   </Typography>
                 </CardContent>
                             <CardActions  disableSpacing>
                                 <ExpandMore
+                                
                                 expand={expanded}
-                                onClick={handleExpandClick}
+                                onClick={()=> {setExpanded(!expanded)}}
                                 aria-expanded={expanded}
                                 aria-label="show more"
                                 >
-                                    <ExpandMoreIcon sx={{color:blackBeauty[100]}} />
+                                    <ExpandMoreIcon sx={{color:blackBeauty[100], key: 'pearl'}} />
                                 </ExpandMore>
                             </CardActions>
                             <Collapse in={expanded}  timeout="auto" unmountOnExit>
@@ -121,6 +200,23 @@ export default function Portfolio(){
                                   <Typography variant='h4' component='div' className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' >
                                     Tech Stack
                                   </Typography>
+                                  
+                                  <Stack sx={{paddingBlockStart:'2vh'}} spacing={12} direction="row" justifyContent="center"  alignItems='center'>
+
+                                  <Box>
+                                      <Typography variant='p' component='div' sx={{color:yellow[500]}}>JavaScript</Typography>
+                                      <CircularProgressWithLabel value={94} sx={{color: yellow[500]}} />
+                                    </Box>
+                                    <Box>
+                                      <Typography variant='p' component='div' sx={{color: outlandishOrange[900]}}>HTML</Typography>
+                                      <CircularProgressWithLabel value={4} sx={{color: outlandishOrange[900]}} />
+                                    </Box>
+                                    <Box>
+                                      <Typography variant='p' component='div' sx={{color: blue[200]}}>CSS</Typography>
+                                      <CircularProgressWithLabel value={2} sx={{color: blue[200]}} />
+                                    </Box>
+                                    
+                                  </Stack>
                                 </CardContent>
                             </Collapse>
                   </Card>
@@ -132,7 +228,7 @@ export default function Portfolio(){
                 xs: '80vw',
                 lg: '30vw'
               }, 
-              margin: '1vw', bgcolor:blackBeauty[800]
+              margin: '1vw', bgcolor:blackBeauty[800], marginInlineEnd: {xl:'25vw'},
               }}>
                 <CardMedia
                   component="video"
@@ -148,25 +244,42 @@ export default function Portfolio(){
                   </Link>
                     
                   </Typography>
-                  <Typography variant="body" color={theme.palette.secondary.subone} sx={{letterSpacing:  {xs: '2px', md: '5px'}, fontSize: {xs: '1.1rem', md: '1.5rem'}, height: {xs: '15vh'}}}>
+                  <Typography variant="body" color={theme.palette.secondary.subone} sx={{letterSpacing:  {xs: '2px', md: '5px'}, fontFamily: 'Bellota Text', fontSize: {xs: '1rem', md: '1rem'}, height: {xs: '15vh'}}}>
                     This is my very &#34;first&#34; personal website... at the very least the one I&#39;m not afraid of showing to the public lol Tremendous growth.
                   </Typography>
                 </CardContent>
                             <CardActions  disableSpacing>
                                 <ExpandMore
-                                expand={expanded}
-                                onClick={handleExpandClick}
-                                aria-expanded={expanded}
+                                key='cosmic'
+                                expand={expanded2}
+                                onClick={()=>{setExpanded2(!expanded2)}}
+                                aria-expanded={expanded2}
                                 aria-label="show more"
                                 >
-                                    <ExpandMoreIcon sx={{color: blackBeauty[100]}} />
+                                    <ExpandMoreIcon  sx={{color: blackBeauty[100], key: 'cosmic'}} />
                                 </ExpandMore>
                             </CardActions>
-                            <Collapse in={expanded}  timeout="auto" unmountOnExit>
+                            <Collapse in={expanded2}  timeout="auto" unmountOnExit>
                                 <CardContent>
                                   <Typography variant='h4' component='div'className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' >
                                     Tech Stack
                                   </Typography>
+                                  <Stack sx={{paddingBlockStart:'2vh'}} spacing={12} direction="row" justifyContent="center"  alignItems='center'>
+
+                                  <Box>
+                                      <Typography variant='p' component='div' sx={{color:yellow[500]}}>JavaScript</Typography>
+                                      <CircularProgressWithLabel value={81} sx={{color: yellow[500]}} />
+                                    </Box>
+                                    <Box>
+                                      <Typography variant='p' component='div' sx={{color: blue[200]}}>CSS</Typography>
+                                      <CircularProgressWithLabel value={15} sx={{color: blue[200]}} />
+                                    </Box>
+                                    <Box>
+                                      <Typography variant='p' component='div' sx={{color: blue[700]}}>TypeScript</Typography>
+                                      <CircularProgressWithLabel value={4} sx={{color: blue[500]}} />
+                                    </Box>
+                                    
+                                  </Stack>
                                 </CardContent>
                             </Collapse>
                   </Card>
@@ -225,9 +338,12 @@ export default function Portfolio(){
 
 
 
-            </div>
+            </Stack>
                
           </CardContent>
+            </CardContent>
+
+
         </Card> 
       </main>    
         </>

@@ -187,48 +187,48 @@ export default function Contact(){
 
 
 
-                <Box sx={{paddingInline: {xs: '8vw'}, paddingBlockStart: {xs:'25vh'}}}>
+                <Box sx={{paddingInline: {xs: '8vw', xl:'25vw'}, paddingBlockStart: {xs:'25vh'}}}>
                     <Card sx={{bgcolor: blackBeauty[800]}} >
                     <CardContent >
                         <form onSubmit={handleSubmit}>
                             <Typography variant='p' component='div' sx={{textAlign: 'center', marginBlockEnd: '3vh', fontSize:'1.5em'}} className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'>Currently looking to take on new projects and work!</Typography>
-                            <TextField onChange={ e => setName(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing:'1.15vw',
+                            <TextField onChange={ e => setName(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'}, 
         "& .MuiFormLabel-root.Mui-focused": {
-            color: outlandishOrange[700]
+            color: outlandishOrange[700],  letterSpacing: 'normal',
         }, "& .MuiInputBase-root": {
-            color: blackBeauty[100]
+            color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
         }  }}  variant='outlined'  size='small' fullWidth label="Name"     />
-                            <TextField onChange={ e => setPhone(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing:'1.15vw',
+                            <TextField onChange={ e => setPhone(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  letterSpacing: {xs: '1vw'}, 
         "& .MuiFormLabel-root.Mui-focused": {
-            color: outlandishOrange[700]
+            color: outlandishOrange[700],  letterSpacing: 'normal',
         }, "& .MuiInputBase-root": {
-            color: blackBeauty[100]
+            color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
         }  }} variant='outlined' size='small' fullWidth label="Phone"  />
-                            <TextField onChange={ e => setEmail(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing:'1.15vw',
+                            <TextField onChange={ e => setEmail(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'},  
         "& .MuiFormLabel-root.Mui-focused": {
-            color: outlandishOrange[700]
+            color: outlandishOrange[700],  letterSpacing: 'normal',
         }, "& .MuiInputBase-root": {
-            color: blackBeauty[100]
+            color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
         }  }} variant='outlined' size='small' fullWidth label="Email" color='secondary' />
-                            <TextField onChange={ e => setCompany(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing:'1.15vw',
+                            <TextField onChange={ e => setCompany(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'},  
         "& .MuiFormLabel-root.Mui-focused": {
-            color: outlandishOrange[700]
+            color: outlandishOrange[700],  letterSpacing: 'normal',
         }, "& .MuiInputBase-root": {
-            color: blackBeauty[100]
+            color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
         }  }} variant='outlined' size='small' fullWidth label="Company" color='secondary' />
-                            <TextField onChange={ e => setSubject(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing:'1.15vw',
+                            <TextField onChange={ e => setSubject(`${e.target.value}`)} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'}, 
         "& .MuiFormLabel-root.Mui-focused": {
-            color: outlandishOrange[700]
+            color: outlandishOrange[700],  letterSpacing: 'normal',
         }, "& .MuiInputBase-root": {
-            color: blackBeauty[100]
+            color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
         }  }} variant='outlined' size='small' fullWidth label="Subject" color='secondary' />
                         <TextField
                          onChange={ e => setMessage()} 
-                        sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing:'1.15vw',
+                        sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'}, 
         "& .MuiFormLabel-root.Mui-focused": {
-            color: outlandishOrange[700]
+            color: outlandishOrange[700],  letterSpacing: 'normal',
         }, "& .MuiInputBase-root": {
-            color: blackBeauty[100]
+            color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
         }  }}
                         label="Message"
                         variant='outlined' 
