@@ -11,7 +11,7 @@ export default function Document() {
     <link rel="stylesheet" href="https://use.typekit.net/gxl0ptg.css" />
     <meta name="theme-color" content="#000000"/>
     </Head>
-      <body  >
+      <body style={{overscrollBehaviorBlock: 'none'}} >
       
         <Main  /> 
       
