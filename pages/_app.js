@@ -6,6 +6,7 @@ import { CacheProvider } from '@emotion/react';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
 import '../styles/globals.css'
+import Layout from '@/components/Layout/Layout';
 const clientSideEmotionCache = createEmotionCache();
 
 
@@ -19,11 +20,13 @@ export default function App(props) {
     <meta name="theme-color" content="#000000"/>
     </Head>
     <ThemeProvider theme={theme} >
-    <div className='canvas' style={{height: '100vh', overscrollBehavior: 'none', position: 'fixed', zIndex:'1'}}>
-    </div>
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
-    <Component {...pageProps} />
+      <Layout>
+        <CssBaseline />
+
+            <Component {...pageProps} />
+      </Layout>
+            
        </ThemeProvider>
   </CacheProvider>
   );

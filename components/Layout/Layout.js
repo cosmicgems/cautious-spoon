@@ -4,7 +4,10 @@ export default function Layout(props) {
     return(
         <>
             <ResponsiveAppBar />
-            {props.children}
+            <div className="canvas" style={{maxHeight:'100vh'}}>
+                {props.children}
+            </div>
+            
         </>
     )
 }
