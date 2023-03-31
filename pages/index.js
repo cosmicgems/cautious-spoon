@@ -46,7 +46,7 @@ export default function Home() {
                   alignItems: 'center',
                   animation: {
                     xs: 'slide-left 9s linear infinite',
-                    md: 'slide-left 15s linear infinite'
+                    md: 'slide-left 17s linear infinite'
                   },
                 }}>  Hello, I&#39;m Maliek.
               </Typography>
@@ -97,7 +97,7 @@ export default function Home() {
                     alignItems: 'center',
                     animation: {
                       xs: 'slide-left2 15s linear infinite',
-                      md: 'slide-left2 11s linear infinite'
+                      md: 'slide-left2 18s linear infinite'
                     } 
                   }}>  HTML CSS JS6
                 </Typography>
@@ -115,7 +115,7 @@ export default function Home() {
                     alignItems: 'center',
                     animation: {
                       xs: 'slide-left2 7s linear infinite',
-                      md: 'slide-left2 13s linear infinite'
+                      md: 'slide-left2 15s linear infinite'
                     } 
                   }}>  USER INTERFACE
                 </Typography>
@@ -133,7 +133,7 @@ export default function Home() {
                     alignItems: 'center',
                     animation: {
                       xs: 'slide-left2 12s linear infinite',
-                      md: 'slide-left2 10s linear infinite'
+                      md: 'slide-left2 16s linear infinite'
                     } 
                   }}>  USER EXPERIENCE
                 </Typography>
@@ -151,7 +151,7 @@ export default function Home() {
                     alignItems: 'center',
                     animation: {
                       xs: 'slide-left2 9s linear infinite',
-                      md: 'slide-left2 14s linear infinite'
+                      md: 'slide-left2 19s linear infinite'
                     } 
                   }}>  API INTERGRATION
                 </Typography>
@@ -169,7 +169,7 @@ export default function Home() {
                     alignItems: 'center',
                     animation: {
                       xs: 'slide-left2 10s linear infinite',
-                      md: 'slide-left2 12s linear infinite'
+                      md: 'slide-left2 14s linear infinite'
                     } 
                   }}>  RESPONSIVE DESIGN
                 </Typography>
