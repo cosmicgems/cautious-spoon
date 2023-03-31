@@ -35,7 +35,7 @@ export default function App(props) {
         animate='animateState'
         exit='exitState'
         transition={{
-          duration: .75,
+          duration: 1.5,
         }}
         variants={{
           initialState: {
