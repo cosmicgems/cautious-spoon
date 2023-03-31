@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={{minHeight: '100vh', paddingBlockEnd: '0', marginBlockEnd: '0', overscrollBehavior: 'none' }}>
+      <main style={{minHeight: '100vh', paddingBlockEnd: '0', marginBlockEnd: '0', overscrollBehavior: 'none' , position: 'sticky'}}>
       <Layout>
       <Card maxHeight='100vh' sx={{paddingBlock: '0', marginBlock:'0', bgcolor:'transparent'}}>
           <CardMedia 
