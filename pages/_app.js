@@ -15,6 +15,8 @@ export default function App(props) {
     <CacheProvider value={emotionCache}>
     <Head>
       <meta name="viewport" content="initial-scale=1, width=device-width" />
+      
+    <meta name="theme-color" content="#000000"/>
     </Head>
     <ThemeProvider theme={theme} >
     <div className='canvas' style={{height: '100vh', overscrollBehavior: 'none', position: 'fixed', zIndex:'1'}}>

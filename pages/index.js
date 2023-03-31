@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <main style={{minHeight: '100vh', paddingBlockEnd: '0', marginBlockEnd: '0', overscrollBehavior: 'none' }}>
       
-      <Card maxHeight='100vh' sx={{paddingBlock: '0', marginBlock:'0'}}>
+      <Card maxHeight='100vh' sx={{paddingBlock: '0', marginBlock:'0', bgcolor:'transparent'}}>
           <CardMedia 
           component='img'
           sx={{ position:'fixed', maxHeight: '100vh', objectFit: 'contain'}}
