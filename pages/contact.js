@@ -160,11 +160,8 @@ export default function Contact(){
         <>
             <Layout>
             
-            <Card  sx={{paddingBlock: '0', marginBlock:'0', bgcolor: 'transparent'}}> 
+            <Card  sx={{paddingBlock: '10vh', marginBlock:'0', bgcolor: 'transparent'}}> 
             
-            <CardContent
-            sx={{  width:'100%', paddingBlockStart: '10vh', paddingInline:'0',}}
-            >
                 <div style={{position:'absolute',display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
                 <Typography variant='h2' component='div' 
@@ -187,7 +184,7 @@ export default function Contact(){
                 </div>
 
 
-                <div style={{position:'absolute', paddingBlockStart: {xs:'7vh'}, display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
+                <div style={{ paddingBlockStart: '7vh', display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
                                 
                 <Typography variant='h1' component='div' 
@@ -205,10 +202,13 @@ export default function Contact(){
                     }}>  Let&#39;s Work Together!
                     </Typography>
                 </div>
+            <CardContent
+            sx={{  width:'100%', paddingBlockStart: '10vh', paddingInline:'0',}}
+            >
 
 
 
-      <Box sx={{position:'relative',paddingInline: {xs: '8vw', xl:'25vw'}, paddingBlockStart: ' 30vh' }}>
+      <Box sx={{position:'relative', paddingInline: {xs: '8vw', xl:'25vw'}}}>
                     <Card sx={{bgcolor: blackBeauty[800]}} >
                     <CardContent >
                     {requestStatus && sendStatus()}

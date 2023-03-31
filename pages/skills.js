@@ -45,11 +45,8 @@ export default function SkillsExp() {
         <> 
         <Layout>
                 
-        <Card  sx={{paddingBlock: '0', marginBlock:'0', bgcolor: 'transparent'}}>
+        <Card  sx={{paddingBlock: '10vh', marginBlock:'0', bgcolor: 'transparent'}}>
            
-            <CardContent
-            sx={{  width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
-            >
                 <div style={{position:'absolute' ,display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
                 <Typography variant='h1' component='div' 
@@ -89,6 +86,10 @@ export default function SkillsExp() {
                     }}>  Experience 
                     </Typography>
                 </div>
+                
+            <CardContent
+            sx={{  width:'100%',  paddingInline: '6vw'}}
+            >
 
 
             <CardContent sx={{ position:'relative', maxWidth: '100%', display:'flex', overflowX:'auto'}}

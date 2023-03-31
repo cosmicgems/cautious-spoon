@@ -11,7 +11,18 @@ html{
   padding: 0;
   margin: 0;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
 
 body{
   background: linear-gradient(to left, #4fb576 , #44c489 , #28a9ae , #28a2b7 , #4c7788 , #6c4f63 , #432c39 );

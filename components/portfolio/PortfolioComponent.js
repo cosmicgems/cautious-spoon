@@ -94,14 +94,9 @@ CircularProgressWithLabel.propTypes = {
             
       
       
-      <Card  sx={{paddingBlock: '0', marginBlock:'0', width:'100%', bgcolor: 'transparent', minHeight: '100vh'}}>
+      <Card  sx={{paddingBlock: '10vh', marginBlock:'0', width:'100%', bgcolor: 'transparent', minHeight: '100vh'}}>
      
           
-          <CardContent
-            sx={{ width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
-            >
-
-              
                 <div style={{position:'absolute' ,display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
                 <Typography variant='h1' component='div' 
@@ -141,10 +136,15 @@ CircularProgressWithLabel.propTypes = {
                     }}>  & Tears 
                     </Typography>
                 </div>
+          <CardContent
+            sx={{ width:'100%',  paddingInline: '6vw'}}
+            >
+
+              
 
                 
             <CardContent
-            sx={{ position:'relative',  maxWidth: '100%', minWidth:'100%', display:'flex', overflow: 'auto'}}
+            sx={{ position:'relative',  maxWidth: '100%', minWidth:'100%', display:'flex', overflow: 'auto',}}
             >
 
 
