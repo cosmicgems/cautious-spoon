@@ -114,8 +114,9 @@ export default function AboutComponent(){
                             <CardMedia
                                 component="img"
                                 alt="pearlbox.co website"
-                                sx={{  maxHeight: '150px', objectFit:'contain'}}
-                                image="/images/maliek-hero3.png"
+                                sx={{  maxHeight: {xs:'150px', xl: '300px'}, objectFit: 'fill',
+                               }}
+                                image="/images/past.JPG"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div" className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>
@@ -167,8 +168,8 @@ export default function AboutComponent(){
                             <CardMedia
                                 component="img"
                                 alt="pearlbox.co website"
-                                sx={{  maxHeight: '150px', objectFit: 'contain'}}
-                                image="/images/maliek-hero3.png"
+                                sx={{  maxHeight: {xs:'150px', xl: '300px'}, objectFit: 'cover'}}
+                                image="/images/present.jpg"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div" className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>
@@ -224,16 +225,16 @@ export default function AboutComponent(){
                             <CardMedia
                                 component="img"
                                 alt="pearlbox.co website"
-                                sx={{  maxHeight: '150px', objectFit: 'contain'}}
-                                image="/images/maliek-hero3.png"
+                                sx={{  maxHeight: {xs:'150px', xl: '300px'}, objectFit: 'cover'}}
+                                image="https://images.pexels.com/photos/8849288/pexels-photo-8849288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div" className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>
-                                    Path to Identity...
+                                    FTL Vision
 
                                 </Typography>
                                 <Typography variant="body"  sx={{color: blackBeauty[100], letterSpacing:'2px', fontFamily: 'Bellota Text'}}>
-                                    This is the story telling the journey about how I did a tremendous amount of self-reflection.
+                                    The future has been written, and it&#39;s pretty intersting.
                                 </Typography>
                             </CardContent>
                             <CardActions disableSpacing>
@@ -249,16 +250,22 @@ export default function AboutComponent(){
                             <Collapse in={expanded3} timeout="auto" unmountOnExit>
                                 <CardContent>
                                 <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>
-                                I was born into the hustle and bustle of Detroit, a city that had seen better days. Growing up, I was always told that if I wanted something, I had to go out and get it for myself. It was a tough environment to grow up in, but I never let it get me down. I was always ready to take on whatever challenges came my way. 
+                                Ah, it&#39;s good to see you again. Have a seat, my friend. Let me tell you a story about how I came to be the most valuable asset to a certain company.  
 
                                 </Typography>
-                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>At the age of 11, my family moved to Rochester Hills, a suburb of Detroit. It was a drastic change, going from the city to the suburbs, and I had to adjust quickly. But even in this new environment, there were challenges. I struggled to find my focus and direction, and it seemed like everyone else around me had it all figured out. 
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>It was a brisk morning when I walked into the interview room. I had been waiting for this moment my entire life. I knew that my skills and talents would make me an indispensable addition to any company. As I sat down, I looked around the room and saw the skeptical faces of the interviewers. They had seen many candidates before me, but I knew that I was different. 
                                 </Typography>
-                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>But I didn&#39;t let that discourage me. I knew that if I wanted to succeed, I had to keep moving forward, no matter what. And that&#39;s exactly what I did. I took every opportunity that came my way, and I worked hard to make the most of it. 
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>I confidently answered their questions and showed them how I could solve problems that others couldn&#39;t. I could see the doubt in their eyes beginning to fade away. They were starting to see what I could bring to the table. As the interview progressed, I could feel their excitement growing. 
                                 </Typography>
-                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>As I got older, I began to realize that my purpose in life was to help others. I wanted to use my skills and talents to make a positive impact in the world. And with that realization came a newfound sense of confidence and determination. 
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>After the interview, I was hired on the spot. The company knew that I was the missing piece to their puzzle. I walked out of that interview with my head held high, knowing that I had achieved something great. 
                                 </Typography>
-                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>Looking back on my journey so far, I realize that it&#39;s been a series of ups and downs. But through it all, I&#39;ve learned to weather the storms and come out stronger on the other side. And I know that whatever challenges come my way in the future, I&#39;ll be ready to take them on with the same resilience and determination that has brought me this far.
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>But the real work was yet to come. I knew that I had to prove myself and show them that their decision to hire me was the right one. I dove headfirst into my work, learning everything I could about the company and its goals. I made sure that every project I worked on was flawless, and I always found ways to improve upon what had been done before. As the months passed, I could see the impact that I was having on the company. They were growing faster than ever before, and I knew that I was a big part of that success. They began to see me as a leader and a mentor, and I embraced that role with open arms. Through hard work and dedication, I had become the most valuable asset to the company. And they knew it too. As we toasted to our success at the annual company party, I couldn&#39;t help but smile. I had come a long way from that young boy in Detroit, but I knew that my journey was far from over. So here I am, my friend, telling you my story. A story of perseverance, determination, and success. And let me tell you, it feels good to be the most valuable asset to a company.
+                                </Typography>
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>As the months passed, I could see the impact that I was having on the company. They were growing faster than ever before, and I knew that I was a big part of that success. They began to see me as a leader and a mentor, and I embraced that role with open arms. 
+                                </Typography>
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>Through hard work and dedication, I had become the most valuable asset to the company. And they knew it too. As we toasted to our success at the annual company party, I couldn&#39;t help but smile. I had come a long way from that young boy in Detroit, but I knew that my journey was far from over. So here I am, my friend, telling you my story. A story of perseverance, determination, and success. And let me tell you, it feels good to be the most valuable asset to a company.
+                                </Typography>
+                                <Typography sx={{color: blackBeauty[100], letterSpacing:'2px', textAlign: 'left', fontFamily: 'Bellota Text'}} paragraph>So here I am, my friend, telling you my story. A story of perseverance, determination, and success. And let me tell you, it feels good to be the most valuable asset to a company.
                                 </Typography>
                                 </CardContent>
                             </Collapse>
