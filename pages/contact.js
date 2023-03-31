@@ -159,16 +159,11 @@ export default function Contact(){
     return(
         <>
             <Layout>
-            <main style={{minHeight: '104.1vh', paddingBlockEnd: '0', marginBlockEnd: '0'}}>
+            
             <Card  sx={{paddingBlock: '0', marginBlock:'0', bgcolor: 'transparent'}}> 
-            <CardMedia 
-            component='img'
-            sx={{ position:'fixed', maxHeight: '100vh', objectFit: 'contain'}}
-            image='/images/maliek-hero.png'
-            alt='Dark work out area with a barbell as the center of attention'
-            />
+            
             <CardContent
-            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh', paddingInline:'0',}}
+            sx={{  width:'100%', paddingBlockStart: '10vh', paddingInline:'0',}}
             >
                 <div style={{position:'absolute',display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
@@ -213,7 +208,7 @@ export default function Contact(){
 
 
 
-      <Box sx={{paddingInline: {xs: '8vw', xl:'25vw'}, paddingBlockStart: ' 30vh' }}>
+      <Box sx={{position:'relative',paddingInline: {xs: '8vw', xl:'25vw'}, paddingBlockStart: ' 30vh' }}>
                     <Card sx={{bgcolor: blackBeauty[800]}} >
                     <CardContent >
                     {requestStatus && sendStatus()}
@@ -276,7 +271,7 @@ export default function Contact(){
             </CardContent>
                 
           </Card> 
-            </main>
+          
             </Layout>
         </>
     )

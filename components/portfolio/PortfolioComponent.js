@@ -92,18 +92,13 @@ CircularProgressWithLabel.propTypes = {
     return (
         <>
             
-      <main style={{minHeight: '100vh',  paddingBlock: '0', marginBlock: '0'}}>
       
-      <Card maxHeight='100vh' sx={{paddingBlock: '0', marginBlock:'0', width:'100%'}}>
-          <CardMedia 
-          component='img'
-          sx={{ position:'fixed', maxHeight: '100vh', objectFit: 'contain'}}
-          image='/images/maliek-hero.png'
-          alt='Dark work out area with a barbell as the center of attention'
-          />
+      
+      <Card  sx={{paddingBlock: '0', marginBlock:'0', width:'100%', bgcolor: 'transparent', minHeight: '100vh'}}>
+     
           
           <CardContent
-            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
+            sx={{ width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
             >
 
               
@@ -149,7 +144,7 @@ CircularProgressWithLabel.propTypes = {
 
                 
             <CardContent
-            sx={{ position:'absolute',  maxWidth: '100%', minWidth:'100%', display:'flex', overflow: 'auto'}}
+            sx={{ position:'relative',  maxWidth: '100%', minWidth:'100%', display:'flex', overflow: 'auto'}}
             >
 
 
@@ -345,7 +340,7 @@ CircularProgressWithLabel.propTypes = {
 
 
         </Card> 
-      </main>    
+        
         </>
     )
 }

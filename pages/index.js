@@ -23,16 +23,16 @@ export default function Home() {
      
       
        
-      <main style={{minHeight: '100vh',  paddingBlock: '0', marginBlock: '0'}}>
+      
       <Card sx={{paddingBlock: '0', marginBlock:'0', bgcolor:'transparent' }}>
-          <CardMedia 
+          {/* <CardMedia 
           component='img'
           sx={{ position:'fixed', maxHeight: '100vh', objectFit: 'contain', bgcolor:'transparent' }}
           image='/images/maliek-hero.png'
           alt='Dark work out area with a barbell as the center of attention'
-          />
+          /> */}
           <CardContent
-          sx={{ position:'absolute', width:'100%', maxheight:'100vh', paddingBlockStart: {xs:'20vh', md:'25vh'}, paddingInline:'0', bgcolor:'transparent'}}
+          sx={{  width:'100%', maxHeight:'100vh',  paddingBlockStart: {xs:'20vh', md:'25vh'}, paddingInline:'0', bgcolor:'transparent'}}
           >
             <div style={{display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
             width:'100%',overflow:'hidden',}}>
@@ -180,7 +180,7 @@ export default function Home() {
             
           </CardContent>
         </Card>     
-        </main>
+       
     </>
   )
 }

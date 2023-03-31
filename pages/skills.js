@@ -44,16 +44,11 @@ export default function SkillsExp() {
     return (
         <> 
         <Layout>
-                    <main style={{minHeight: '100vh', paddingBlockEnd: '0', marginBlockEnd: '0'}}>     
-        <Card maxHeight='100vh' sx={{paddingBlock: '0', marginBlock:'0'}}>
-            <CardMedia 
-            component='img'
-            sx={{ position:'fixed', maxHeight: '100vh', objectFit: 'contain'}}
-            image='/images/maliek-hero.png'
-            alt='Dark work out area with a barbell as the center of attention'
-            />
+                
+        <Card  sx={{paddingBlock: '0', marginBlock:'0', bgcolor: 'transparent'}}>
+           
             <CardContent
-            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
+            sx={{  width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
             >
                 <div style={{position:'absolute' ,display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
@@ -96,7 +91,7 @@ export default function SkillsExp() {
                 </div>
 
 
-            <CardContent sx={{  maxWidth: '100%', display:'flex', overflowX:'auto'}}
+            <CardContent sx={{ position:'relative', maxWidth: '100%', display:'flex', overflowX:'auto'}}
              >
 
                 <Stack direction='row' justifyContent="space-evenly" alignItems='center' style={{display:'flex', textAlign:'center', paddingInlineStart: '4vw'}}>
@@ -275,6 +270,114 @@ export default function SkillsExp() {
                                     </Stack>
                                 </Grid>
                             </Grid>
+
+
+                            {/* NextJS */}
+                            <Grid container minWidth={300}  sx={{marginInlineEnd: '5vw', bgcolor:blackBeauty[800], padding:'1vh 3vw', borderRadius:'10px'}}>
+                            <Grid item xs={12}>
+                                <Typography variant='h5' component='div' className='animate-text bg-gradient-to-r from-yellow-500 via-blue-500 to-white-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>NextJS</Typography>
+                            </Grid>
+                                <Grid item xs={3}>
+                                    <div style={{height: '25'}}>
+                                        <Image src='https://cdn.worldvectorlogo.com/logos/next-js.svg' height={25} width={25} alt='NextJS Logo' />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={9}>
+                                    <Stack sx={{ width: '100%', color: 'grey.500', alignContent:'center' }} spacing={2}>
+                                        <LinearProgress color="inherit" variant='determinate' value={83} sx={{marginBlockStart:'5%', color: yellow[500]}} />
+                                    </Stack>
+                                </Grid>
+                            </Grid>
+                            
+
+                            {/* ReactJS */}
+                            <Grid container minWidth={300}  sx={{marginInlineEnd: '5vw', bgcolor:blackBeauty[800], padding:'1vh 3vw', borderRadius:'10px'}}>
+                            <Grid item xs={12}>
+                                <Typography variant='h5' component='div' className='animate-text bg-gradient-to-r from-yellow-500 via-blue-500 to-white-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>ReactJS</Typography>
+                            </Grid>
+                                <Grid item xs={3}>
+                                    <div style={{height: '25'}}>
+                                        <Image src='https://cdn.worldvectorlogo.com/logos/react-2.svg' height={25} width={25} alt='React JS Logo' />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={9}>
+                                    <Stack sx={{ width: '100%', color: 'grey.500', alignContent:'center' }} spacing={2}>
+                                        <LinearProgress color="inherit" variant='determinate' value={83} sx={{marginBlockStart:'5%', color: yellow[500]}} />
+                                    </Stack>
+                                </Grid>
+                            </Grid>
+
+                            {/* React Native */}
+                            <Grid container minWidth={300}  sx={{marginInlineEnd: '5vw', bgcolor:blackBeauty[800], padding:'1vh 3vw', borderRadius:'10px'}}>
+                            <Grid item xs={12}>
+                                <Typography variant='h5' component='div' className='animate-text bg-gradient-to-r from-yellow-500 via-blue-500 to-white-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>React Native</Typography>
+                            </Grid>
+                                <Grid item xs={3}>
+                                    <div style={{height: '25'}}>
+                                        <Image src='https://cdn.worldvectorlogo.com/logos/react-native-1.svg' height={25} width={25} alt='React Native Logo' />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={9}>
+                                    <Stack sx={{ width: '100%', color: 'grey.500', alignContent:'center' }} spacing={2}>
+                                        <LinearProgress color="inherit" variant='determinate' value={83} sx={{marginBlockStart:'5%', color: yellow[500]}} />
+                                    </Stack>
+                                </Grid>
+                            </Grid>
+                            
+
+                            {/* Tailwind CSS */}
+                            <Grid container minWidth={300}  sx={{marginInlineEnd: '5vw', bgcolor:blackBeauty[800], padding:'1vh 3vw', borderRadius:'10px'}}>
+                            <Grid item xs={12}>
+                                <Typography variant='h5' component='div' className='animate-text bg-gradient-to-r from-yellow-500 via-blue-500 to-white-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>Tailwind CSS</Typography>
+                            </Grid>
+                                <Grid item xs={3}>
+                                    <div style={{height: '25'}}>
+                                        <Image src='https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg' height={25} width={25} alt='Tailwind CSS Logo' />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={9}>
+                                    <Stack sx={{ width: '100%', color: 'grey.500', alignContent:'center' }} spacing={2}>
+                                        <LinearProgress color="inherit" variant='determinate' value={83} sx={{marginBlockStart:'5%', color: yellow[500]}} />
+                                    </Stack>
+                                </Grid>
+                            </Grid>
+
+
+                            {/* Material UI */}
+                            <Grid container minWidth={300}  sx={{marginInlineEnd: '5vw', bgcolor:blackBeauty[800], padding:'1vh 3vw', borderRadius:'10px'}}>
+                            <Grid item xs={12}>
+                                <Typography variant='h5' component='div' className='animate-text bg-gradient-to-r from-yellow-500 via-blue-500 to-white-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>Material UI</Typography>
+                            </Grid>
+                                <Grid item xs={3}>
+                                    <div style={{height: '25'}}>
+                                        <Image src='https://cdn.worldvectorlogo.com/logos/material-ui-1.svg' height={25} width={25} alt='NextJS Logo' />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={9}>
+                                    <Stack sx={{ width: '100%', color: 'grey.500', alignContent:'center' }} spacing={2}>
+                                        <LinearProgress color="inherit" variant='determinate' value={83} sx={{marginBlockStart:'5%', color: yellow[500]}} />
+                                    </Stack>
+                                </Grid>
+                            </Grid>
+                            
+
+                            {/* Framer Motion */}
+                            <Grid container minWidth={300}  sx={{marginInlineEnd: '5vw', bgcolor:blackBeauty[800], padding:'1vh 3vw', borderRadius:'10px'}}>
+                            <Grid item xs={12}>
+                                <Typography variant='h5' component='div' className='animate-text bg-gradient-to-r from-yellow-500 via-blue-500 to-white-500 bg-clip-text text-transparent  font-black' sx={{fontWeight:'bold', textAlign: 'center'}}>Framer Motion</Typography>
+                            </Grid>
+                                <Grid item xs={3}>
+                                    <div style={{height: '25'}}>
+                                        <Image src='https://cdn.worldvectorlogo.com/logos/framer-motion.svg' height={25} width={25} alt='Framer Motion Logo' />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={9}>
+                                    <Stack sx={{ width: '100%', color: 'grey.500', alignContent:'center' }} spacing={2}>
+                                        <LinearProgress color="inherit" variant='determinate' value={83} sx={{marginBlockStart:'5%', color: yellow[500]}} />
+                                    </Stack>
+                                </Grid>
+                            </Grid>
+                            
                             
                     </div>
 
@@ -382,7 +485,7 @@ export default function SkillsExp() {
             </CardContent>
             
           </Card> 
-          </main>
+         
         </Layout>
 
         </>

@@ -45,19 +45,14 @@ export default function AboutComponent(){
     return (
         <>
             
-            <main style={{minHeight: '100vh', paddingBlockEnd: '0', marginBlockEnd: '0'}}>
             
-                <Card maxHeight='100vh' sx={{paddingBlock: '0', marginBlock:'0', width: '100%'}}>
-                    <CardMedia 
-                    component='img'
-                    sx={{ position:'fixed', maxHeight: '100vh', objectFit: 'contain'}}
-                    image='/images/maliek-hero.png'
-                    alt='Dark work out area with a barbell as the center of attention'
-                    />
+            
+                <Card sx={{paddingBlock: '0', marginBlock:'0', width: '100%', bgcolor: 'transparent'}}>
+                    
 
                     
             <CardContent
-            sx={{ position:'absolute', width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
+            sx={{  width:'100%', paddingBlockStart: '10vh', paddingInline: '0'}}
             > 
             <div style={{position:'absolute' ,display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>
@@ -101,7 +96,7 @@ export default function AboutComponent(){
 
                                     
             <CardContent
-            sx={{ position:'absolute',  maxWidth: '100%', display:'flex', overflowX:'scroll'}}
+            sx={{ position:'relative',  maxWidth: '100%', display:'flex', overflowX:'scroll'}}
             >
             
             <Stack direction='row' justifyContent="center" alignItems='center' style={{display:'flex', textAlign:'center'}}>
@@ -277,7 +272,7 @@ export default function AboutComponent(){
                         
             
                     </Card> 
-            </main>    
+             
         </>
     )
 }
