@@ -159,7 +159,7 @@ export default function Contact(){
     return(
         <>
             <Layout>
-            <main style={{minHeight: '100vh', paddingBlockEnd: '0', marginBlockEnd: '0'}}>
+            <main style={{minHeight: '104.1vh', paddingBlockEnd: '0', marginBlockEnd: '0'}}>
             <Card  sx={{paddingBlock: '0', marginBlock:'0', bgcolor: 'transparent'}}> 
             <CardMedia 
             component='img'
