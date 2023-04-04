@@ -215,7 +215,11 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
     
     
         const showButton = () => {
-                return    <Button type='submit' variant='outlined' fullWidth> {formButton} </Button> 
+                return      <Button type='submit' variant='contained'sx={{fontSize:'1.5rem', letterSpacing: '2vw', }}  fullWidth> 
+                                <Typography variant='p' component='div'
+                                 className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'
+                                > {formButton} </Typography>
+                            </Button> 
             
         }
         
@@ -295,33 +299,45 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
     
     
         <form onSubmit={handleSubmit} > 
-    
+        {!finished && 
+            <Typography variant='h3' component='div' sx={{textAlign: 'center', marginBlockEnd: '3vh', fontSize:'2em'}} className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'>Brand Consultation Form</Typography>
+        }    
         {part1 &&
             <>
+                                
+                                <Typography></Typography>  
                 <TextField onChange={ e => setName(`${e.target.value}`)} value={name} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'}, 
             "& .MuiFormLabel-root.Mui-focused": {
                 color: outlandishOrange[700],  letterSpacing: 'normal',
             }, "& .MuiInputBase-root": {
                 color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
             }  }}  variant='outlined'  size='small' fullWidth label="Name"     />
+                                
+                                <Typography></Typography>  
                                 <TextField onChange={ e => setPhone(`${e.target.value}`)} value={phone} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  letterSpacing: {xs: '1vw'}, 
             "& .MuiFormLabel-root.Mui-focused": {
                 color: outlandishOrange[700],  letterSpacing: 'normal',
             }, "& .MuiInputBase-root": {
                 color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
             }  }} variant='outlined' size='small' fullWidth label="Phone"  />
+                                
+                                <Typography></Typography>  
                                 <TextField onChange={ e => setEmail(`${e.target.value}`)} value={email} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'},  
             "& .MuiFormLabel-root.Mui-focused": {
                 color: outlandishOrange[700],  letterSpacing: 'normal',
             }, "& .MuiInputBase-root": {
                 color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
             }  }} variant='outlined' size='small' fullWidth label="Email" color='secondary' />
+                                
+                                <Typography></Typography>  
                                 <TextField onChange={ e => setCompany(`${e.target.value}`)} value={company} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'},  
             "& .MuiFormLabel-root.Mui-focused": {
                 color: outlandishOrange[700],  letterSpacing: 'normal',
             }, "& .MuiInputBase-root": {
                 color: blackBeauty[100], fontFamily: 'Bellota Text', letterSpacing: 'normal', 
             }  }} variant='outlined' size='small' fullWidth label="Company" color='secondary' />
+                                
+                                <Typography></Typography>  
                                 <TextField onChange={ e => setSubject(`${e.target.value}`)} value={subject} sx={{marginBlockEnd:'2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]}, letterSpacing: {xs: '1vw'}, 
             "& .MuiFormLabel-root.Mui-focused": {
                 color: outlandishOrange[700],  letterSpacing: 'normal',
@@ -335,9 +351,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
     
         {part2 && 
             <>
+                                
+
+                                
+
+            <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{brand_name}</Typography>   
                 <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -349,9 +370,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{mission_statement}</Typography>  
                 <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -363,9 +389,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{core_values}</Typography> 
                 <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -377,9 +408,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{target_audience}</Typography>  
                 <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -391,9 +427,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{fingerprint}</Typography>  
                 <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -415,10 +456,13 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
     
         {part3 &&
             <>
-                
+    
+                                
+
+            <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{personality}</Typography>     
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -430,9 +474,13 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+  
+                                
+
+  <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{usp}</Typography> 
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -444,9 +492,13 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+
+                                
+
+<Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{visual_association}</Typography> 
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -458,9 +510,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{logo_like}</Typography> 
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -472,9 +529,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{logo_dislike}</Typography>  
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -492,10 +554,10 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
     
         {part4 &&
             <>
-                
+            <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{products_services}</Typography>   
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} }, 
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -507,9 +569,12 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+            <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{marketing_channels}</Typography>   
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -521,9 +586,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{timeline}</Typography> 
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -535,9 +605,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{existing_brand_assets}</Typography> 
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
@@ -549,9 +624,14 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                                 fullWidth
                                 rows={2}
                                 />
+                                
+
+                                
+
+                                <Typography sx={{display: { md:'none'}, color: blackBeauty[100],  fontSize: '1rem', fontFamily: 'Bellota Text'}}>{decision_maker}</Typography> 
             <TextField
                                 
-                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100]},  
+                                sx={{marginBlockEnd: '2vh',"& .MuiFormLabel-root": {color: blackBeauty[100],  fontSize: {xs: '1.15rem'}, letterSpacing: {xs: '1px'}, display: {xs: 'none', md: 'inherit'} },  
                 "& .MuiFormLabel-root.Mui-focused": {
                     color: outlandishOrange[700],  letterSpacing: 'normal',
                 }, "& .MuiInputBase-root": {
