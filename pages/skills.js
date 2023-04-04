@@ -45,7 +45,7 @@ export default function SkillsExp() {
         <> 
         <Layout>
                 
-        <Card  sx={{paddingBlock: '10vh', marginBlock:'0', bgcolor: 'transparent'}}>
+        <Card elevation={0}  sx={{paddingBlock: '10vh', marginBlock:'0', bgcolor: 'transparent'}}>
            
                 <div style={{position:'absolute' ,display: 'flex', flexWrap: 'nowrap', whiteSpace: 'nowrap',
                 width:'100%',overflow:'hidden',}}>

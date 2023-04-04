@@ -156,7 +156,7 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
                 const JSONdata = JSON.stringify({formData})
     
                 // API endpoint where we send form data.
-                const endpoint = '/api/consultation/web-development'
+                const endpoint = '/api/consultation/brand-development'
     
                 // Form the request for sending data to the server.
                 const options = {
@@ -215,9 +215,9 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
     
     
         const showButton = () => {
-                return      <Button type='submit' variant='contained'sx={{fontSize:'1.5rem', letterSpacing: '2vw', }}  fullWidth> 
+                return      <Button type='submit' variant='contained' className='btn-gradient' sx={{fontSize:'1.5rem', letterSpacing: '2vw', }}  fullWidth> 
                                 <Typography variant='p' component='div'
-                                 className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'
+                                 
                                 > {formButton} </Typography>
                             </Button> 
             
@@ -300,7 +300,7 @@ import { Box,  Card, CardActions, CardContent, CardHeader, Grid,
     
         <form onSubmit={handleSubmit} > 
         {!finished && 
-            <Typography variant='h3' component='div' sx={{textAlign: 'center', marginBlockEnd: '3vh', fontSize:'2em'}} className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'>Brand Consultation Form</Typography>
+            <Typography variant='h3' component='div' sx={{textAlign: 'center', marginBlockEnd: '3vh', fontSize:'2em'}} className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'>Brand Consultation</Typography>
         }    
         {part1 &&
             <>

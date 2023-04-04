@@ -10,6 +10,9 @@ import Link from 'next/link'
 import theme from '@/src/theme'
 
 const inter = Inter({ subsets: ['latin'] })
+       
+
+
 
 export default function Home() {
   return (
@@ -22,9 +25,10 @@ export default function Home() {
       </Head>
      
       
-       
+
+
       
-      <Card sx={{paddingBlock: '0', marginBlock:'0', bgcolor:'transparent' }}>
+      <Card elevation={0} sx={{paddingBlock: '0', marginBlock:'0', bgcolor:'transparent' }}>
           {/* <CardMedia 
           component='img'
           sx={{ position:'fixed', maxHeight: '100vh', objectFit: 'contain', bgcolor:'transparent' }}
@@ -75,7 +79,7 @@ export default function Home() {
 
 
             <Box  sx={{textAlign:'center', paddingBlock: '5vh 0', paddingInline: {xs: '17.5vw'}}}>
-            <Link  href='/contact'><Button fullWidth elevation='5'
+            <Link  href='/contact'><Button className='' fullWidth elevation='5'
               variant='contained'
               
               sx={{fontFamily: 'mongoose', paddingBlock: {xs:'2vh'}, fontSize: {xs:'1.5rem'} }}

@@ -213,7 +213,7 @@ export default function WebDevForm(){
 
 
     const showButton = () => {
-            return    <Button type='submit' variant='outlined' fullWidth> {formButton} </Button> 
+            return    <Button type='submit' variant='contained' fullWidth sx={{fontSize:'1.5rem', letterSpacing: '2vw', }} className='btn-gradient'> {formButton} </Button> 
         
     }
     
@@ -329,6 +329,9 @@ const [checkboxValues, setCheckboxValues] = useState([]);
 
 
     <form onSubmit={handleSubmit} > 
+        {!finished && 
+            <Typography variant='h3' component='div' sx={{textAlign: 'center', marginBlockEnd: '3vh', fontSize:'2em'}} className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'>Web Consultation</Typography>
+        } 
 
     {part1 &&
         <>

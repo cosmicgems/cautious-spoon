@@ -47,7 +47,7 @@ export default function AboutComponent(){
             
             
             
-                <Card sx={{paddingBlockStart: '10vh', marginBlock:'0', width: '100%', bgcolor: 'transparent'}}>
+                <Card elevation={0} sx={{paddingBlockStart: '10vh', marginBlock:'0', width: '100%', bgcolor: 'transparent'}}>
                     
 
                     

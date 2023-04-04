@@ -17,7 +17,7 @@ import { blackBeauty } from '@/src/utils/typography/color';
 import { NavLink,} from 'react-router-dom';
 import { useRouter } from 'next/router';
 
-const pages = [   'contact', 'about','skills','portfolio'];
+const pages = [  'contact', 'about','skills','portfolio'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -42,9 +42,9 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed" sx={{bgcolor: blackBeauty[900], fontFamily: 'mongoose' }} >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+    <AppBar position="fixed" sx={{bgcolor: blackBeauty[900], fontFamily: 'mongoose', paddingInline: '0' , justifyContent: 'space-between'}} >
+      <Container  maxWidth="xxl">
+        <Toolbar   disableGutters>
           
           <Typography
             variant="h6"
@@ -58,14 +58,14 @@ function ResponsiveAppBar() {
               fontWeight: 700,
               letterSpacing: '.3rem',
               textDecoration: 'none',
-              fontSize:'3rem'
+              fontSize:'3rem',
             }}
             className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black'
           >
             Maliek Davis
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'} }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'},  }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -104,8 +104,18 @@ function ResponsiveAppBar() {
                   
                 </MenuItem>
               ))}
+                <MenuItem onClick={handleCloseNavMenu}>
+                <Link href='/consultation/web-development' ><Typography textAlign="center" sx={{fontSize:'1.35rem', letterSpacing: '2px'}} className={router.pathname === ( '/consultation/web-development' ) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black fw-bold' : 'white-text'}  >WEBSITE CONSULTATION</Typography></Link>
+                  
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                <Link href='/consultation/brand-development' ><Typography textAlign="center" sx={{fontSize:'1.35rem', letterSpacing: '2px'}} className={router.pathname === ( '/consultation/brand-development' ) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black fw-bold' : 'white-text'}  >BRAND CONSULTATION</Typography></Link>
+                  
+                </MenuItem>
             </Menu>
           </Box>
+
+
           <Typography
             variant="h5"
             noWrap
@@ -124,26 +134,49 @@ function ResponsiveAppBar() {
           >
             Maliek Davis
           </Typography>
+
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, flexDirection:'row-reverse' }}>
+            <Link  href='/consultation/brand-development'><Button
+                  
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, mr:5, color: 'white', display: 'block' , fontSize: '2rem'}}
+              >
+              <Typography sx={{fontSize:'1rem'}} className={router.pathname === ( '/consultation/brand-development' ) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : ''} >
+                Brand Consultation
+              </Typography>
+                
+              </Button></Link>
+            <Link  href='/consultation/web-development'><Button
+                  
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' , fontSize: '2rem'}}
+              >
+              <Typography sx={{fontSize:'1rem'}} className={router.pathname === ( '/consultation/web-development' ) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : ''} >
+                Website Consultation
+              </Typography>
+                
+              </Button></Link>
           
             {pages.map((page) => (
               <Link key={page} href={`${page}`}><Button
                  
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', fontSize: '1.5rem' }}
+                sx={{ my: 2, color: 'white', display: 'block', fontSize: '1rem' }}
               >
-              <Typography sx={{fontSize:'2rem'}} className={router.pathname === ( '/' + page.toLowerCase()) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : ''}   >
+              <Typography sx={{fontSize:'1rem'}} className={router.pathname === ( '/' + page.toLowerCase()) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : ''}   >
                 {page}
               </Typography>
                 
               </Button></Link>
               
-            ))}<Link  href='/'><Button
+            ))}
+            <Link  href='/'><Button
                   
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' , fontSize: '2rem'}}
               >
-              <Typography sx={{fontSize:'2rem'}} className={router.pathname === ( '/' ) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : ''} >
+              <Typography sx={{fontSize:'1rem'}} className={router.pathname === ( '/' ) ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black' : ''} >
                 Home
               </Typography>
                 
