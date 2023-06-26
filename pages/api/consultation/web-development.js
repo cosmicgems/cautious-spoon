@@ -5,6 +5,7 @@ require('dotenv').config()
 export default  async function handler(req, res) {
   if (req.method == 'POST') {
       const {formData} = req.body;
+      const {email: EMAIL_TO} = formData;
 
       // if (
       //     !email || 
@@ -43,10 +44,11 @@ export default  async function handler(req, res) {
               console.log(process.env.SENDGRID_API_KEY);
               // Send email notification using SendGrid
               sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-              const my_email = process.env.EMAIL_TO
+              const EMAIL_FROM = process.env.EMAIL_FROM
+              
               const msg = {
-                to: 'maliekjdavis24@gmail.com', // Your email address
-                from: my_email, // Your website email address
+                to: EMAIL_TO, // Your email address
+                from: EMAIL_FROM, // Your website email address
                 subject: "Web Development Consultation",
                 text: "A new web development consultation form has been submitted.",
                 html: `<p>${JSON.stringify(newWebConsultation)}</p>`,
